@@ -1,0 +1,42 @@
+/* Website Width */
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/* Header - Navigation */
+.logo {
+  font-weight: 900;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  padding: 1.4rem;
+  background-color: #242424;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 1.25rem;
+}
+
+header nav ul li a {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 150ms ease-in;
+}
+
+header nav ul li a:hover {
+  color: #03d1ff;
+}
