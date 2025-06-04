@@ -1,4 +1,6 @@
+import './Header.css';
 import { CgDarkMode } from 'react-icons/cg';
+import Button from '../Button/Button';
 
 const Header = ({ toggleTheme }) => {
   return (
@@ -28,6 +30,7 @@ const Header = ({ toggleTheme }) => {
             </ul>
           </nav>
           <CgDarkMode className="theme-toggle" onClick={toggleTheme} />
+          <Button label="Login" />
         </div>
       </div>
     </header>

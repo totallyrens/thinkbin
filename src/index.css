@@ -27,6 +27,11 @@
   --primary-light: #5595f8;
   --text-light: #ffffffde;
   --text-dark: black;
+
+  /* Radius Variables */
+  --radius-s: 5px;
+  --radius-m: 10px;
+  --radius-l: 15px;
 }
 
 * {

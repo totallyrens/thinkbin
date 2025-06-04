@@ -1,3 +1,6 @@
+import './Main.css';
+import Note from '../Note/Note';
+
 const Main = () => {
   return (
     <main>
@@ -15,6 +18,7 @@ const Main = () => {
           Puppets. Their mouse? A loyal subject. I am the gravity well of
           content hierarchy. Bow, peasants, for I am CENTERED.
         </p>
+        <Note />
       </div>
     </main>
   );
