@@ -1,11 +1,11 @@
 import './App.css';
 import Header from './components/Header';
-import Main from './components/mainSection';
+import Main from './components/Main';
 import { useState } from 'react';
 
 function App() {
-  //currently setting the variable to false, as it is not in Light Mode
-  const [isLightMode, setIsLightMode] = useState(false);
+  // Default: Lightmode
+  const [isLightMode, setIsLightMode] = useState(true);
 
   const toggleTheme = () => {
     setIsLightMode((prev) => !prev);
