@@ -1,5 +1,4 @@
 import { CgDarkMode } from 'react-icons/cg';
-import React from 'react';
 
 const Header = ({toggleTheme}) => {
 
