@@ -1,7 +1,8 @@
 const Header = () => {
   return (
     <header>
-      <div className="container navbar">
+      <div className="container">
+        <img src="/logo.png" alt="logo Image" />
         <h1 className="logo">Thinkbin</h1>
         <nav>
           <ul>
