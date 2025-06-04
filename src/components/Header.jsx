@@ -1,7 +1,6 @@
 import { CgDarkMode } from 'react-icons/cg';
 
-const Header = ({toggleTheme}) => {
-
+const Header = ({ toggleTheme }) => {
   return (
     <header>
       <div className="container navbar">

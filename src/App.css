@@ -14,11 +14,17 @@
   text-decoration: none;
 }
 
-.logo-wrapper { cursor: pointer; }
+.logo-wrapper {
+  cursor: pointer;
+}
 
-.navbar { justify-content: space-between; }
+.navbar {
+  justify-content: space-between;
+}
 
-.navbar > a { text-decoration: none; }
+.navbar > a {
+  text-decoration: none;
+}
 
 .nav-right {
   display: flex;
@@ -31,7 +37,9 @@
   margin-left: 1.25rem;
 }
 
-header { padding: .8rem; }
+header {
+  padding: 0.8rem;
+}
 
 header div {
   display: flex;
@@ -40,6 +48,39 @@ header div {
 header div img {
   width: 50px;
   height: auto;
+}
+header div img:hover {
+  animation: shake 0.6s linear infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(13deg);
+  }
+  15% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-13deg);
+  }
+  35% {
+    transform: rotate(13deg);
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(-13deg);
+  }
+  65% {
+    transform: rotate(13deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-13deg);
+  }
 }
 
 header nav {
@@ -54,7 +95,9 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li { margin-left: 1.25rem; }
+header nav ul li {
+  margin-left: 1.25rem;
+}
 
 header nav ul li a {
   font-weight: 900;
@@ -62,31 +105,77 @@ header nav ul li a {
   transition: color 150ms ease-in;
 }
 
-header nav ul li a:hover { color: #03d1ff; }
+/* header nav ul li a:hover { */
+/*   color: #03d1ff; */
+/* } */
+
+.theme-toggle {
+  transition: color 0.2s ease-in;
+}
+.theme-toggle:hover {
+  color: grey;
+}
 
 .light {
   background-color: white;
   color: black;
-  transition: ease-in .5s;
+  transition: ease-in 0.5s;
 }
 .light header {
   background-color: #cfcfcf; /* lighter shade for light mode */
+  /*i really wanted to use the linear gradient but smooth transition will not work*/
+  /* background: linear-gradient(180deg,rgba(250, 250, 250, 1) 0%, rgba(230, 227, 227, 1) 50%, rgba(212, 210, 210, 1) 100%); */
   color: black;
-  transition: ease-in .5s;
+  transition: ease-in 0.5s;
 }
-.light header nav ul li a { color: black; }
-.light .navbar > a { color: black; }
-
+.light header nav ul li a {
+  color: black;
+}
+.light .navbar > a {
+  color: black;
+}
+.light header nav ul li a:hover {
+  color: #03d1ff;
+}
 .dark {
   background-color: #121212;
   color: white;
-  transition: ease-in .8s;
+  transition: ease-in 0.8s;
 }
-.dark header nav ul li a { color: white; }
+.dark header nav ul li a {
+  color: white;
+}
 .dark header {
   background-color: #1a1a1a; /* darker shade for dark mode */
+  /*i really wanted to use the linear gradient but smooth transition will not work*/
+  /* background: linear-gradient(180deg,rgba(38, 38, 38, 1) 1%, rgba(33, 33, 33, 1) 50%, rgba(33, 32, 32, 1) 98%, rgba(33, 32, 32, 1) 100%); */
   color: white;
-  transition: ease-in .8s;
+  transition: ease-in 0.8s;
 }
-.dark header nav ul li a { color: white; }
-.navbar > a { color: white; }
+.dark header nav ul li a {
+  color: white;
+}
+header nav ul li a:hover {
+  color: #03d1ff;
+}
+.navbar > a {
+  color: white;
+}
+
+/*MAIN SECTION*/
+
+/*keep this*/
+main {
+  height: 92vh;
+  margin: 0 auto;
+}
+
+/*but you can throw this out this is just a throwaway placholder styler*/
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(40vh);
+  padding: 0 10%;
+}
