@@ -1,8 +1,8 @@
 /* Website Width */
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
-}
+/* .container { */
+/*   max-width: 1366px; */
+/*   margin: 0 auto; */
+/* } */
 
 /* Header - Navigation */
 .logo {
@@ -90,3 +90,24 @@ header nav ul li a:hover { color: #03d1ff; }
 }
 .dark header nav ul li a { color: white; }
 .navbar > a { color: white; }
+
+
+/*MAIN SECTION*/
+
+/*keep this*/
+main{
+  height: 92vh;
+  margin: 0 auto;
+}
+
+/*but you can throw this out this is just a throwaway placholder styler*/
+main div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(40vh);
+  padding: 0 10%;
+}
+
+

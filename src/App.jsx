@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import Main from './components/mainSection'
 import { useState } from 'react';
 
 function App() {
@@ -15,9 +16,7 @@ function App() {
   return (
     <div className={isLightMode ? 'light' : 'dark'}>
       <Header toggleTheme={toggleTheme} />
-      <div className="container">
-        <h2>Main Content</h2>
-      </div>
+      <Main />
     </div>
   );
 }
