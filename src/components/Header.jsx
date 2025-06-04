@@ -3,7 +3,8 @@ import { CgDarkMode } from 'react-icons/cg';
 const Header = () => {
   return (
     <header>
-      <div className="container navbar">
+      <div className="container">
+        <img src="/logo.png" alt="logo Image" />
         <h1 className="logo">Thinkbin</h1>
         <div className="nav-right">
           <nav>
