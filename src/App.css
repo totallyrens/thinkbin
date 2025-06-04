@@ -7,10 +7,24 @@
 /* Header - Navigation */
 .logo {
   font-weight: 900;
+  font-size: 2rem;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  padding: 0 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  cursor: pointer;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .nav-right {
@@ -28,16 +42,17 @@ header {
   padding: 1.4rem;
   background-color: #242424;
 }
-header div{
+
+header div {
   display: flex;
   justify-content: center;
 }
-header div img{
+header div img {
   width: 60px;
   height: auto;
 }
 
-header nav{
+header nav {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
