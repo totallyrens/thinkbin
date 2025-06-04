@@ -1,20 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root {
+  overflow: hidden;
+  height: 100vh;
+}
+
 :root {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #ffffffde;
-  background-color: #363636;
+  /* color: var(--text-light); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color Variables */
+  --bg-light: #f1f1f1;
+  --bg-dark: #121212;
+  --bg-dark-2: #1a1a1a;
+  --bg-white: #fff;
+  --primary: #2b7bf6;
+  --primary-dark: #2262c5;
+  --primary-light: #5595f8;
+  --text-light: #ffffffde;
+  --text-dark: black;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
 }

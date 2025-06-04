@@ -105,77 +105,78 @@ header nav ul li a {
   transition: color 150ms ease-in;
 }
 
-/* header nav ul li a:hover { */
-/*   color: #03d1ff; */
-/* } */
-
 .theme-toggle {
   transition: color 0.2s ease-in;
 }
+
 .theme-toggle:hover {
-  color: grey;
+  color: var(--primary);
 }
 
 .light {
-  background-color: white;
-  color: black;
+  height: 100%;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
   transition: ease-in 0.5s;
 }
+
 .light header {
-  background-color: #cfcfcf; /* lighter shade for light mode */
+  background-color: var(--bg-white); /* lighter shade for light mode */
   /*i really wanted to use the linear gradient but smooth transition will not work*/
   /* background: linear-gradient(180deg,rgba(250, 250, 250, 1) 0%, rgba(230, 227, 227, 1) 50%, rgba(212, 210, 210, 1) 100%); */
-  color: black;
   transition: ease-in 0.5s;
 }
+
 .light header nav ul li a {
-  color: black;
+  color: var(--text-dark);
 }
+
+/* LOGO TEXT LIGHTMODE */
 .light .navbar > a {
   color: black;
 }
+
 .light header nav ul li a:hover {
-  color: #03d1ff;
+  color: var(--primary);
 }
+
 .dark {
-  background-color: #121212;
-  color: white;
+  height: 100%;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
   transition: ease-in 0.8s;
 }
-.dark header nav ul li a {
-  color: white;
-}
+
 .dark header {
-  background-color: #1a1a1a; /* darker shade for dark mode */
+  background-color: var(--bg-dark-2);
   /*i really wanted to use the linear gradient but smooth transition will not work*/
   /* background: linear-gradient(180deg,rgba(38, 38, 38, 1) 1%, rgba(33, 33, 33, 1) 50%, rgba(33, 32, 32, 1) 98%, rgba(33, 32, 32, 1) 100%); */
-  color: white;
   transition: ease-in 0.8s;
 }
+
 .dark header nav ul li a {
-  color: white;
+  color: var(--text-light);
 }
+
 header nav ul li a:hover {
-  color: #03d1ff;
+  color: var(--primary);
 }
+
+/* LOGO TEXT DEFAULT */
 .navbar > a {
   color: white;
 }
 
 /*MAIN SECTION*/
-
-/*keep this*/
 main {
-  height: 92vh;
-  margin: 0 auto;
+  height: 100%;
 }
 
-/*but you can throw this out this is just a throwaway placholder styler*/
-main div {
+/* Temporarily */
+.content {
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  transform: translateY(40vh);
-  padding: 0 10%;
+  justify-content: center;
+  align-items: center;
 }

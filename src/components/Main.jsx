@@ -1,9 +1,9 @@
-const mainSection = () => {
+const Main = () => {
   return (
     <main>
-      <div>
-        <h2>Main Content</h2>
-        {/*also i can't stress this enough, only use one h1*/}
+      <div class="content container">
+        {/* The Logo was just a temporary h1 */}
+        <h1>Main Content</h1>
         <p>
           Ah yes, behold me—the main content, center-aligned and ego-inflated,
           basking in the pixel-perfect glory of symmetrical margins! While
@@ -20,4 +20,4 @@ const mainSection = () => {
   );
 };
 
-export default mainSection;
+export default Main;
