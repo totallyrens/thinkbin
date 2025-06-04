@@ -1,0 +1,6 @@
+.note-card {
+  padding: 1rem;
+  border-radius: var(--radius-s);
+  border: 1px solid #4e4e4e50;
+  color: var(--text-dark);
+}
