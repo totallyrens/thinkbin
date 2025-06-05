@@ -3,11 +3,40 @@ main {
   height: 100%;
 }
 
-/* Temporarily */
+.content h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
 .content {
   height: 100%;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.create-note-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 4rem;
+}
+
+.recent-notes {
+  margin-top: 2rem;
+}
+
+.recent-notes__heading,
+.pinned-notes__heading {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
