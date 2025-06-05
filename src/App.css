@@ -4,9 +4,9 @@
   margin: 0 auto;
 }
 
-/* Theme needs refactoring to dedicated Theme.css file */
+/* Theme needs refactoring to different setup */
 .light {
-  height: 100%;
+  min-height: 100vh;
   background-color: var(--bg-light);
   color: var(--text-dark);
   transition: ease-in 0.5s;
@@ -33,7 +33,7 @@
 }
 
 .dark {
-  height: 100%;
+  min-height: 100vh;
   background-color: var(--bg-dark);
   color: var(--text-light);
   transition: ease-in 0.8s;
