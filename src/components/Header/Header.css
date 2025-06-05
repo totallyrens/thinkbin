@@ -24,6 +24,10 @@
 .nav-right {
   display: flex;
   align-items: center;
+
+  button {
+    margin-left: 1rem;
+  }
 }
 
 .theme-toggle {
@@ -96,6 +100,7 @@ header nav ul li {
 
 header nav ul li a {
   font-weight: 900;
+  font-size: 1.1rem;
   text-decoration: none;
   transition: color 150ms ease-in;
   color: var(--text-light);
