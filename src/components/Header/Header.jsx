@@ -1,17 +1,25 @@
 import './Header.css';
 import { CgDarkMode } from 'react-icons/cg';
 import Button from '../Button/Button';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Header = ({ toggleTheme }) => {
+
+  const navigate = useNavigate();
+  
+  const navigateLogin = () =>{
+    navigate("/login")
+  }
+
   return (
     <header>
       <div className="container navbar">
-        <a href="#">
+        <Link to="/">
           <div className="logo-wrapper">
             <img src="/logo.png" alt="logo Image" />
             <span className="logo">Thinkbin</span>
           </div>
-        </a>
+        </Link>
         <div className="nav-right">
           <nav>
             <ul>
@@ -30,7 +38,7 @@ const Header = ({ toggleTheme }) => {
             </ul>
           </nav>
           <CgDarkMode className="theme-toggle" onClick={toggleTheme} />
-          <Button label="Login" />
+          <Button label="Login" onClick={navigateLogin}/>
         </div>
       </div>
     </header>

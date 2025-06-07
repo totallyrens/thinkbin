@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className={isLightMode ? 'light' : 'dark'}>
+    <div className={isLightMode ? 'dark' : 'light'}>
       <Header toggleTheme={toggleTheme} />
       <Main />
     </div>
