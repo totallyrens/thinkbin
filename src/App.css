@@ -45,3 +45,10 @@
   /* background: linear-gradient(180deg,rgba(38, 38, 38, 1) 1%, rgba(33, 33, 33, 1) 50%, rgba(33, 32, 32, 1) 98%, rgba(33, 32, 32, 1) 100%); */
   transition: ease-in 0.8s;
 }
+
+.dark .note-card h3{
+    color: white;
+}
+.dark .note-card p{
+    color: white;
+}

@@ -1,3 +1,14 @@
-.form-wrapper: {
-  background: red;
+.form-wrapper{
+  height: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
 }

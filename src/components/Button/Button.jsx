@@ -1,7 +1,7 @@
 import './Button.css';
 
-const Button = (props) => {
-  return <button>{props.label}</button>;
+const Button = ({ label, onClick }) => {
+  return <button onClick={onClick}>{label}</button>;
 };
 
 export default Button;
